@@ -28,9 +28,11 @@ describe('Testing Product component display', () => {
     wrapper = shallow(<Product data={product} />);
   });
 
-  it('contains a label', () => {});
+  it('contains a label', () => {
+    expect(wrapper.find('h2.ProductName').text().length).toBeGreaterThan(0);
+  });
 
-  it('should have a status', () => {});
-
-  it('should not have a status message', () => {});
+  it('should have a status', () => {
+    expect(wrapper.find('.textStatus').text().length).toBeGreaterThan(0);
+  });
 });

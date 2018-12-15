@@ -1,0 +1,103 @@
+@import '../_variables.scss';
+
+.Product {
+  position: relative;
+  width: calc(100% - 20px);
+  text-align: left;
+  margin: 0 auto 20px;
+  padding: calc(2em + 8vmin) 10px 2em;
+  background: $white-color;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba($black-color, .3);
+  &Name {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 3vmin 0;
+    color: $primary-color;
+    font-size: 2em;
+    text-transform: uppercase;
+    @media (min-width: $tablet-width) {
+      left: 15px;
+      right: 15px;
+    }
+    @media (min-width: $desktop-width) {
+      left: 20px;
+      right: 20px;
+      font-size: 2.5em;
+    }
+  }
+  &Status {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 1vmin 0;
+    text-align: right;
+    color: lighten($black-color, 35%);
+    font-size: 0.875em;
+    &Green {
+      color: darken(green, 10%);
+      font-weight: 500;
+    }
+  }
+  &Label {
+    font-weight: 500;
+    text-align: center;
+  }
+  &Numbers {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin: 2px 10%;
+    &.header {
+      padding-bottom: 1px;
+      border-bottom: 1px solid $primary-color;
+      margin-bottom: 4px;
+    }
+  }
+  &MinMax {
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: darken($white-color, 25%);
+    .colored {
+      color: darken($primary-color, 10%);
+      font-weight: 500;
+    }
+    @media (min-width: $tablet-width) {
+      height: 10vh;
+    }
+  }
+  &Min {
+    flex: 3;
+  }
+  &Max {
+    flex: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    // padding: 0 15px 15px;
+  }
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-bottom: 50px;
+    // padding: 0;
+    font-size: 0.75em;
+  }
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-4 {
+  flex: 2;
+}
