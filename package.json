@@ -1,7 +1,7 @@
 {
   "name": "products-listing-app",
   "version": "1.0.0",
-  "description": "Technical assignment for the Donut company",
+  "description": "Technical assignment for the Donut Technologies Gmbh company",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack",
