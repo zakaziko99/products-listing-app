@@ -22,5 +22,7 @@ describe('Testing ProductStats component display', () => {
     wrapper = shallow(<ProductStats data={productStats} />);
   });
 
-  it('should have a volume', () => {});
+  it('should have a volume', () => {
+    expect(wrapper.find('.volume').text().length).toBeGreaterThan(0);
+  });
 });
