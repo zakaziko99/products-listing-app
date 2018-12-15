@@ -1,0 +1,38 @@
+@import '../_variables.scss';
+
+.Loading {
+  text-align: center;
+  width: 20vh;
+  margin: 10vh auto;
+
+  &Cercle {
+    border-color: $border-color;
+    width: 16vh;
+    height: 16vh;
+    margin: 0 auto;
+    border-radius: 32vh;
+    border-style: solid;
+    border-width: .4vh;
+    position: relative;
+  }
+
+  &Spinner {
+    position: absolute;
+    width: 16vh;
+    height: 16vh;
+    top: 0;
+    left: 0;
+    border-radius: 8vh;
+    box-shadow: 0 0.3vh 0 0 $primary-color;
+    animation: spinner-anim 1s linear infinite;
+  }
+}
+
+@keyframes spinner-anim {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
