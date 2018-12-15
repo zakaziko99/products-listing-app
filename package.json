@@ -1,0 +1,8 @@
+{
+  "name": "products-listing-app",
+  "version": "1.0.0",
+  "description": "Technical assignment for the Donut company",
+  "main": "index.js",
+  "author": "Zakaria Amarifi",
+  "license": "MIT"
+}
