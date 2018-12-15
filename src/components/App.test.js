@@ -7,8 +7,12 @@ import App from './App';
 
 configure({ adapter: new Adapter() });
 
-describe('Testing fetching API data', () => {
-  it('renders products when it fetched data successfully', () => {
-    // const wrapper = shallow(<App />);
+describe('Testing initial state', () => {
+  it('should display loading and have no products', () => {
+    const wrapper = shallow(<App />);
+
+    //initial state of products
+    expect(wrapper.state().products).toEqual([]);
+    expect(wrapper.state().isLoading).toEqual(true);
   });
 });
