@@ -12,4 +12,4 @@ You can run `npm run test` or `yarn test` to execute the test suites
 You can run `npm run build` or `yarn build` to execute the test suites
 
 ### Notice:
-- The application is responsive desig, so you can display it under Mobile or Tablet also
+- The application is responsive design, so you can display it under Mobile or Tablet devices also
